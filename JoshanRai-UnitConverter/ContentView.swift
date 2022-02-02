@@ -8,9 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Dynamic Variables
+    @FocusState private var amountIsFocus: Bool
+    
+    // Variable Methods
+    
+    // Constants
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                Section {
+                    //  Temperature View
+                    NavigationLink(destination: TemperatureConversionView()) {
+                        Label("Temperature Conversion", systemImage: "thermometer")
+                    }
+                    
+                    //  Length View
+                    NavigationLink(destination: LengthConversionView()) {
+                        Label("Length Conversion", systemImage: "ruler")
+                    }
+                    
+                    //  Time View
+                    /*NavigationLink(destination: TimeConversionView()) {
+                        Label("Time Conversion", systemImage: "clock")
+                    }*/
+                } header: {
+                    Header()
+                }
+            }
+            .navigationTitle("Unit Converter")
+        }
     }
 }
 
