@@ -30,9 +30,14 @@ struct ContentView: View {
                     }
                     
                     //  Time View
-                    /*NavigationLink(destination: TimeConversionView()) {
+                    NavigationLink(destination: TimeConversionView()) {
                         Label("Time Conversion", systemImage: "clock")
-                    }*/
+                    }
+                    
+                    //  Volume View
+                    NavigationLink(destination: VolumeConversionView()) {
+                        Label("Volume Conversion", systemImage: "drop")
+                    }
                 } header: {
                     Header()
                 }

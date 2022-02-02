@@ -57,13 +57,13 @@ struct LengthConversionView: View {
         case "Meter":
             switch selectedLengthOutputType {
             case "Kilometer":
-                return "\(meterToKilometer) km"
+                return "\(meterToKilometer.formatted()) km"
             case "Foot":
-                return "\(meterToFoot) ft"
+                return "\(meterToFoot.formatted()) ft"
             case "Yard":
-                return "\(meterToYard) yd"
+                return "\(meterToYard.formatted()) yd"
             case "Mile":
-                return "\(meterToMile) mi"
+                return "\(meterToMile.formatted()) mi"
             default:
                 return "\(0)"
             }
@@ -71,13 +71,13 @@ struct LengthConversionView: View {
         case "Kilometer":
             switch selectedLengthOutputType {
             case "Meter":
-                return "\(kilometerToMeter) m"
+                return "\(kilometerToMeter.formatted()) m"
             case "Foot":
-                return "\(kilometerToFoot) ft"
+                return "\(kilometerToFoot.formatted()) ft"
             case "Yard":
-                return "\(kilometerToYard) yd"
+                return "\(kilometerToYard.formatted()) yd"
             case "Mile":
-                return "\(kilometerToMile) mi"
+                return "\(kilometerToMile.formatted()) mi"
             default:
                 return "\(0)"
             }
@@ -85,13 +85,13 @@ struct LengthConversionView: View {
         case "Foot":
             switch selectedLengthOutputType {
             case "Meter":
-                return "\(footToMeter) m"
+                return "\(footToMeter.formatted()) m"
             case "Kilometer":
-                return "\(footToKilometer) km"
+                return "\(footToKilometer.formatted()) km"
             case "Yard":
-                return "\(footToYard) yd"
+                return "\(footToYard.formatted()) yd"
             case "Mile":
-                return "\(footToMile) mi"
+                return "\(footToMile.formatted()) mi"
             default:
                 return "\(0)"
             }
@@ -99,13 +99,13 @@ struct LengthConversionView: View {
         case "Yard":
             switch selectedLengthOutputType {
             case "Meter":
-                return "\(yardToMeter) m"
+                return "\(yardToMeter.formatted()) m"
             case "Kilometer":
-                return "\(yardToKilometer) km"
+                return "\(yardToKilometer.formatted()) km"
             case "Foot":
-                return "\(yardToFoot) ft"
+                return "\(yardToFoot.formatted()) ft"
             case "Mile":
-                return "\(yardToMile) mi"
+                return "\(yardToMile.formatted()) mi"
             default:
                 return "\(0)"
             }
@@ -113,13 +113,13 @@ struct LengthConversionView: View {
         case "Mile":
             switch selectedLengthOutputType {
             case "Meter":
-                return "\(mileToMeter) m"
+                return "\(mileToMeter.formatted()) m"
             case "Kilometer":
-                return "\(mileToKilometer) km"
+                return "\(mileToKilometer.formatted()) km"
             case "Yard":
-                return "\(mileToYard) yd"
+                return "\(mileToYard.formatted()) yd"
             case "Foot":
-                return "\(mileToFoot) ft"
+                return "\(mileToFoot.formatted()) ft"
             default:
                 return "\(0)"
             }

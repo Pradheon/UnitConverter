@@ -34,27 +34,27 @@ struct TemperatureConversionView: View {
         case "Celcius":
             switch selectedTemperatureOutputType {
             case "Fahrenheit":
-                return "\(celciusToFahrenheit)°F"
+                return "\(celciusToFahrenheit.formatted()) °F"
             case "Kelvin":
-                return "\(celciusToKelvin)K"
+                return "\(celciusToKelvin.formatted()) K"
             default:
                 return "\(0)"
             }
         case "Fahrenheit":
             switch selectedTemperatureOutputType {
             case "Celcius":
-                return "\(fahrenheitToCelcius)°C"
+                return "\(fahrenheitToCelcius.formatted()) °C"
             case "Kelvin":
-                return "\(fahrenheitToKelvin)K"
+                return "\(fahrenheitToKelvin.formatted()) K"
             default:
                 return "\(0)"
             }
         case "Kelvin":
             switch selectedTemperatureOutputType {
             case "Celcius":
-                return "\(kelvinToCelcius)°C"
+                return "\(kelvinToCelcius.formatted()) °C"
             case "Fahrenheit":
-                return "\(kelvinToFahrenheit)°F"
+                return "\(kelvinToFahrenheit.formatted()) °F"
             default:
                 return "\(0)"
             }

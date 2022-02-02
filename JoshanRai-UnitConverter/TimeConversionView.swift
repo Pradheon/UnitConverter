@@ -22,42 +22,71 @@ struct TimeConversionView: View {
         let time = Double(timeAmount)
         
         //  Second Conversion
-        let celciusToFahrenheit = ((time * 9) / 5) + 32
-        let celciusToKelvin = time + 273.15
+        let secondToMinute = time / 60
+        let secondToHour = time / 3600
+        let secondToDay = time / 86400
         
         //  Minute Conversion
-        let fahrenheitToCelcius = ((time - 32) * 5) / 9
-        let fahrenheitToKelvin = (((time - 32) * 5) / 9) + 273.15
+        let minuteToSecond = time * 60
+        let minuteToHour = time / 60
+        let minuteToDay = time / 1440
         
         //  Hour Conversion
-        let kelvinToCelcius = time - 273.15
-        let kelvinToFahrenheit = (((time - 273.15) * 9 ) / 5) + 32
+        let hourToSecond = time * 3600
+        let hourToMinute = time * 60
+        let hourToDay = time / 24
+        
+        //  Day Conversion
+        let dayToSecond = time * 86400
+        let dayToMinute = time * 1440
+        let dayToHour = time * 24
         
         switch selectedTimeInputType {
-        case "Celcius":
+            // Case for Second
+        case "Second":
             switch selectedTimeOutputType {
-            case "Fahrenheit":
-                return "\(celciusToFahrenheit)°F"
-            case "Kelvin":
-                return "\(celciusToKelvin)K"
+            case "Minute":
+                return "\(secondToMinute.formatted()) min"
+            case "Hour":
+                return "\(secondToHour.formatted()) hr"
+            case "Day":
+                return "\(secondToDay.formatted()) hr"
             default:
                 return "\(0)"
             }
-        case "Fahrenheit":
+            // Case for Minute
+        case "Minute":
             switch selectedTimeOutputType {
-            case "Celcius":
-                return "\(fahrenheitToCelcius)°C"
-            case "Kelvin":
-                return "\(fahrenheitToKelvin)K"
+            case "Second":
+                return "\(minuteToSecond.formatted()) min"
+            case "Hour":
+                return "\(minuteToHour.formatted()) hr"
+            case "Day":
+                return "\(minuteToDay.formatted()) hr"
             default:
                 return "\(0)"
             }
-        case "Kelvin":
+            // Case for Hour
+        case "Hour":
             switch selectedTimeOutputType {
-            case "Celcius":
-                return "\(kelvinToCelcius)°C"
-            case "Fahrenheit":
-                return "\(kelvinToFahrenheit)°F"
+            case "Minute":
+                return "\(hourToMinute.formatted()) min"
+            case "Second":
+                return "\(hourToSecond.formatted()) hr"
+            case "Day":
+                return "\(hourToDay.formatted()) hr"
+            default:
+                return "\(0)"
+            }
+            // Case for Day
+        case "Day":
+            switch selectedTimeOutputType {
+            case "Minute":
+                return "\(dayToMinute.formatted()) min"
+            case "Hour":
+                return "\(dayToHour.formatted()) hr"
+            case "Second":
+                return "\(dayToSecond.formatted()) hr"
             default:
                 return "\(0)"
             }
