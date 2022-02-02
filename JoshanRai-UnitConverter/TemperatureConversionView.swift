@@ -109,5 +109,6 @@ struct TemperatureConversionView: View {
             }
         }
         .navigationTitle("Temperature Conversion")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }

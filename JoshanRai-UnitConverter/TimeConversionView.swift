@@ -141,6 +141,7 @@ struct TimeConversionView: View {
             }
         }
         .navigationTitle("Time Conversion")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -174,6 +174,7 @@ struct LengthConversionView: View {
             }
         }
         .navigationTitle("Length Conversion")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

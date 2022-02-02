@@ -174,6 +174,7 @@ struct VolumeConversionView: View {
             }
         }
         .navigationTitle("Volume Conversion")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
