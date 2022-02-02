@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3F1907D727AA23CA00397B24 /* TemperatureConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907D627AA23CA00397B24 /* TemperatureConversionView.swift */; };
-		3F1907D927AA242A00397B24 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907D827AA242A00397B24 /* HeaderView.swift */; };
 		3F1907DB27AA248200397B24 /* LengthConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907DA27AA248200397B24 /* LengthConversionView.swift */; };
 		3F1907DD27AA4C9900397B24 /* TimeConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907DC27AA4C9900397B24 /* TimeConversionView.swift */; };
 		3F1907DF27AA4CB300397B24 /* VolumeConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907DE27AA4CB300397B24 /* VolumeConversionView.swift */; };
+		3F1907E127AAF78600397B24 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1907E027AAF78600397B24 /* HeaderView.swift */; };
 		3F9D086127A9E98800B88063 /* JoshanRai_UnitConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D086027A9E98800B88063 /* JoshanRai_UnitConverterApp.swift */; };
 		3F9D086327A9E98800B88063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9D086227A9E98800B88063 /* ContentView.swift */; };
 		3F9D086527A9E98900B88063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9D086427A9E98900B88063 /* Assets.xcassets */; };
@@ -20,10 +20,10 @@
 
 /* Begin PBXFileReference section */
 		3F1907D627AA23CA00397B24 /* TemperatureConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConversionView.swift; sourceTree = "<group>"; };
-		3F1907D827AA242A00397B24 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderView.swift; path = "../../../views-15/iOS 15/SwiftUI_Views/ProjectResources/HeaderView.swift"; sourceTree = "<group>"; };
 		3F1907DA27AA248200397B24 /* LengthConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LengthConversionView.swift; sourceTree = "<group>"; };
 		3F1907DC27AA4C9900397B24 /* TimeConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeConversionView.swift; sourceTree = "<group>"; };
 		3F1907DE27AA4CB300397B24 /* VolumeConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeConversionView.swift; sourceTree = "<group>"; };
+		3F1907E027AAF78600397B24 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3F9D085D27A9E98800B88063 /* JoshanRai-UnitConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JoshanRai-UnitConverter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9D086027A9E98800B88063 /* JoshanRai_UnitConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoshanRai_UnitConverterApp.swift; sourceTree = "<group>"; };
 		3F9D086227A9E98800B88063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 				3F1907DA27AA248200397B24 /* LengthConversionView.swift */,
 				3F1907DC27AA4C9900397B24 /* TimeConversionView.swift */,
 				3F1907DE27AA4CB300397B24 /* VolumeConversionView.swift */,
-				3F1907D827AA242A00397B24 /* HeaderView.swift */,
+				3F1907E027AAF78600397B24 /* HeaderView.swift */,
 				3F9D086427A9E98900B88063 /* Assets.xcassets */,
 				3F9D086627A9E98900B88063 /* Preview Content */,
 			);
@@ -157,8 +157,8 @@
 				3F9D086327A9E98800B88063 /* ContentView.swift in Sources */,
 				3F9D086127A9E98800B88063 /* JoshanRai_UnitConverterApp.swift in Sources */,
 				3F1907D727AA23CA00397B24 /* TemperatureConversionView.swift in Sources */,
-				3F1907D927AA242A00397B24 /* HeaderView.swift in Sources */,
 				3F1907DD27AA4C9900397B24 /* TimeConversionView.swift in Sources */,
+				3F1907E127AAF78600397B24 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +301,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-UnitConverter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -330,7 +330,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jrai.JoshanRai-UnitConverter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
