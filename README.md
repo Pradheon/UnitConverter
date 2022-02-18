@@ -4,7 +4,7 @@
 Unit conversion app. Allows the user to choose to convert temperatures, length, time, and volume. 
 
 ### Version
--
+v2.1.2
 
 ## Links
 - [Swift](<https://www.swift.org/> "Swift")
